@@ -1,6 +1,7 @@
-class CreateNames < ActiveRecord::Migration[7.0]
+class CreateFlats < ActiveRecord::Migration[7.0]
   def change
-    create_table :names do |t|
+    create_table :flats do |t|
+      t.string :name
       t.string :address
       t.text :description
       t.integer :price_per_night
