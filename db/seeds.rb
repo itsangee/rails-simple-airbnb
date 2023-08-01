@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+Flat.create!(
+  name: 'Unique treehouse with hot tub and incredible views',
+  address: 'Walterstone, England, United Kingdom',
+  description: 'Goytree Glamping and Treehouses presents The Phoenix Tree: Come stay in our truly unique treehouse with private hot tub and outdoor shower.',
+  price_per_night: 56,
+  number_of_guest: 3
+)

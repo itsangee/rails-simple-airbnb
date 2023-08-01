@@ -1,0 +1,15 @@
+<div style="center">
+  <h1>Simple AirBNB</h1>
+  <h3>All of our FLATS (<%= @flats.count %>)</h3>
+
+    <button>Add Flat</button>
+    <% @flats.each do |flat| %>
+      <li> <%= flat.name %> </li>
+      <li> <%= flat.address %> </li>
+      <li> <%= flat.description %> </li>
+    <% end %>
+
+  <% @flats.each do |flat| %>
+    <%= link_to "See more", flat_path(flat) %>
+  <% end %>
+</div>
