@@ -12,3 +12,11 @@ Flat.create!(
   price_per_night: 56,
   number_of_guest: 3
 )
+
+Flat.create!(
+  name: 'Unique treehouse',
+  address: 'England, United Kingdom',
+  description: 'The Phoenix Tree: Come stay in our truly unique treehouse with private hot tub and outdoor shower.',
+  price_per_night: 56,
+  number_of_guest: 3
+)

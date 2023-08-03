@@ -1,15 +1,17 @@
-<div style="center">
+<div class="text-center">
   <h1>Simple AirBNB</h1>
   <h3>All of our FLATS (<%= @flats.count %>)</h3>
 
-    <button>Add Flat</button>
-    <% @flats.each do |flat| %>
-      <li> <%= flat.name %> </li>
-      <li> <%= flat.address %> </li>
-      <li> <%= flat.description %> </li>
-    <% end %>
+    <button>  <%= link_to "Add Flat",  new_flat_path(@flat) %>     </button>
 
-  <% @flats.each do |flat| %>
-    <%= link_to "See more", flat_path(flat) %>
-  <% end %>
+    <div class="container">
+      <div class="row">
+        <% @flats.each do |flat| %>
+        <div class="col-sm-4"><li> <%= flat.name %> </li></div>
+        <div class="col-sm-4"><li> <%= flat.address %> </li></div>
+        <div class="col-sm-4"><li> <%= flat.description %> </li></div>
+        <div class="col-sm-4"><%= link_to "See more", flat_path(flat) %></div>
+      <% end %>
+      </div>
+    </div>
 </div>
